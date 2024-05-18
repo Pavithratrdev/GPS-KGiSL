@@ -14,7 +14,8 @@ const AdminLogin = () => {
     if (
       adminEmail.toLowerCase() === 'principal@kgkite.ac.in' || 
       adminEmail.toLowerCase() === 'directoracademics@kgkite.ac.in' ||
-      adminEmail.toLowerCase() === 'ao@kgkite.ac.in'
+      adminEmail.toLowerCase() === 'ao@kgkite.ac.in' || 
+      adminEmail.toLowerCase() === 'lawrence.b@kgkite.ac.in'
     ) {
       setIsAdminAuthenticated(true);
       alert("Hello! You logged in.");
