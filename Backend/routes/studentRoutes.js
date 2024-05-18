@@ -8,6 +8,10 @@ router.post('/', async (req, res) => {
   const studentData = req.body;
 
   try {
+    const existingStudent = await Student.findOne({ email: studentData.email });
+    if (existingStudent) {
+      return res.status(400).json({ message: 'Email is already registered' });
+    }
     const student = await Student.create(studentData);
     res.status(201).json("Sent succesfully");
   } catch (error) {

@@ -17,12 +17,15 @@ const GuruForm = () => {
     guruFirstChoice: '',
     guruFirstCompany: '',
     guruFirstDesignation: '',
+    guruFirstSector: '',
     guruSecondChoice: '',
     guruSecondCompany: '',
     guruSecondDesignation: '',
+    guruSecondSector: '',
     guruThirdChoice: '',
     guruThirdCompany: '',
-    guruThirdDesignation: ''
+    guruThirdDesignation: '',
+    guruThirdSector: ''
   });
 
   useEffect(()=>{
@@ -34,10 +37,199 @@ const GuruForm = () => {
   const departments = ['Computer Science', 'Electronics','Information Technology', 'Mechanical', 'Computer science and Business systems'];
   const years = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
   const gurus = [
-    { name: 'Guru 1', company: 'Company A', designation: 'Designation X' },
-    { name: 'Guru 2', company: 'Company B', designation: 'Designation Y' },
-    { name: 'Guru 3', company: 'Company C', designation: 'Designation Z' },
-  ];
+    {
+      "Name": "Dr. S.Kalpana",
+      "Designation": "HoD / ASP",
+      "Company": "AI&DS",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Mr.Sathish R",
+      "Designation": "Asst Prof",
+      "Company": "AI&DS",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Mr.Rajasekaran. S",
+      "Designation": "ASP",
+      "Company": "IT",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Mr.V. Vivekanandan",
+      "Designation": "Asst Prof",
+      "Company": "CSE",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Mrs. Geetha. V",
+      "Designation": "Asst Prof",
+      "Company": "CSE",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Dr.Leena B",
+      "Designation": "Asst Prof",
+      "Company": "ECE",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Dr. C. Venkatesh",
+      "Designation": "Professor",
+      "Company": "ECE",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Dr.Kamalakannan.S",
+      "Designation": "ASP",
+      "Company": "ECE",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Dr. S.K. Mydhili",
+      "Designation": "Professor",
+      "Company": "ECE",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Mr.E. Joel Anandraj",
+      "Designation": "Asst Prof",
+      "Company": "IT",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Dr. P.Krishna Priya",
+      "Designation": "Director",
+      "Company": "KG Genius Labs",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Ms.Pavithra. T.R",
+      "Designation": "Director",
+      "Company": "Metazord",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Mr. Navaneeth.M",
+      "Designation": "Director",
+      "Company": "KGX",
+      "Sector": "Edu"
+    },
+    {
+      "Name": "Ms. Ramya Vellingiri",
+      "Designation": "Director & Principal Architect",
+      "Company": "KGISL",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Vinith Menon",
+      "Designation": "Vice President & Regional Head - MEA",
+      "Company": "KGISL",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Saranyan Umapathy",
+      "Designation": "Vice President - Global Business Development",
+      "Company": "KGISL",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr. Anand Pulijal",
+      "Designation": "Director - Business Development",
+      "Company": "KG Invicta Services Pvt LTD",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr. Santhosh Sadashivan",
+      "Designation": "Director - Products & Solutions",
+      "Company": "KG Invicta Services Pvt LTD",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Ms. Usha Venugopal",
+      "Designation": "Operations Manager",
+      "Company": "KGM",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Shravan Kumar R",
+      "Designation": "Deputy Manager - Program Planning & Production Control",
+      "Company": "BMW Plant Chennai",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Dr.Chellappa Gopalakrishnan",
+      "Designation": "CEO",
+      "Company": "Genomatics Pvt Ltd",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Vishwanath Surendiran",
+      "Designation": "CEO",
+      "Company": "Steam-A",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Dinesh Tantri",
+      "Designation": "Founder",
+      "Company": "Digithos",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Thamizharasu C",
+      "Designation": "Manager - Strategic Projects",
+      "Company": "Quadra Systems",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Chinnasamy",
+      "Designation": "Founder",
+      "Company": "Centillion Labs",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Vishnu Prasad KC",
+      "Designation": "Sr. Manager - HR",
+      "Company": "NCC Ltd",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Anantha Raman",
+      "Designation": "Director - Projects",
+      "Company": "ZakApps",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Indu Renganathan",
+      "Designation": "HR Generalist",
+      "Company": "Glenwood Systems",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Saravanan Theckyam",
+      "Designation": "Product Lead",
+      "Company": "Google",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Ramesh Gopal",
+      "Designation": "Co-Founder",
+      "Company": "Colors of India",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Archan Choudhury",
+      "Designation": "Founder",
+      "Company": "Blackperl Academy",
+      "Sector": "Industry"
+    },
+    {
+      "Name": "Mr.Sandeep Joshi",
+      "Designation": "Technologist",
+      "Company": "Ex- Amazon",
+      "Sector": "Industry"
+    }
+  ];    
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,12 +240,13 @@ const GuruForm = () => {
   };
 
   const handleGuruChange = (choice, e) => {
-    const selectedGuru = gurus.find(guru => guru.name === e.target.value);
+    const selectedGuru = gurus.find(guru => guru.Name === e.target.value);
     setFormData((prevData) => ({
       ...prevData,
       [`${choice}Choice`]: e.target.value,
-      [`${choice}Company`]: selectedGuru ? selectedGuru.company : '',
-      [`${choice}Designation`]: selectedGuru ? selectedGuru.designation : '',
+      [`${choice}Company`]: selectedGuru ? selectedGuru.Company : '',
+      [`${choice}Designation`]: selectedGuru ? selectedGuru.Designation : '',
+      [`${choice}Sector`]: selectedGuru ? selectedGuru.Sector : '',
     }));
   };
 
@@ -74,12 +267,15 @@ const GuruForm = () => {
         guruFirstChoice: '',
         guruFirstCompany: '',
         guruFirstDesignation: '',
+        guruFirstSector: '',
         guruSecondChoice: '',
         guruSecondCompany: '',
         guruSecondDesignation: '',
+        guruSecondSector: '',
         guruThirdChoice: '',
         guruThirdCompany: '',
-        guruThirdDesignation: ''
+        guruThirdDesignation: '',
+        guruThirdSector: ''
       })
     } catch (error) {
       console.log(error)
@@ -199,7 +395,7 @@ const GuruForm = () => {
             >
               <option value="">Select</option>
               {gurus.map(guru => (
-                <option key={guru.name} value={guru.name}>{guru.name}</option>
+                <option key={guru.Name} value={guru.Name}>{guru.Name}</option>
               ))}
             </select>
             <input
@@ -214,6 +410,12 @@ const GuruForm = () => {
               value={formData.guruFirstDesignation}
               disabled
             />
+            <input
+              type="text"
+              name="guruFirstSector"
+              value={formData.guruFirstSector}
+              disabled
+            />
           </div>
           <div className="form-group">
             <label>Guru Second Choice</label>
@@ -225,7 +427,7 @@ const GuruForm = () => {
             >
               <option value="">Select</option>
               {gurus.map(guru => (
-                <option key={guru.name} value={guru.name}>{guru.name}</option>
+                <option key={guru.Name} value={guru.Name}>{guru.Name}</option>
               ))}
             </select>
             <input
@@ -240,6 +442,12 @@ const GuruForm = () => {
               value={formData.guruSecondDesignation}
               disabled
             />
+            <input
+              type="text"
+              name="guruSecondSector"
+              value={formData.guruSecondSector}
+              disabled
+            />
           </div>
           <div className="form-group">
             <label>Guru Third Choice</label>
@@ -251,7 +459,7 @@ const GuruForm = () => {
             >
               <option value="">Select</option>
               {gurus.map(guru => (
-                <option key={guru.name} value={guru.name}>{guru.name}</option>
+                <option key={guru.Name} value={guru.Name}>{guru.Name}</option>
               ))}
             </select>
             <input
@@ -264,6 +472,12 @@ const GuruForm = () => {
               type="text"
               name="guruThirdDesignation"
               value={formData.guruThirdDesignation}
+              disabled
+            />
+            <input
+              type="text"
+              name="guruThirdSector"
+              value={formData.guruThirdSector}
               disabled
             />
           </div>
