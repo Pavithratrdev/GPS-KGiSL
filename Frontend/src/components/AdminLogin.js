@@ -63,12 +63,15 @@ const AdminLogin = () => {
                 <th>Guru First Choice</th>
                 <th>Guru First Company</th>
                 <th>Guru First Designation</th>
+                <th>Guru First Sector</th>
                 <th>Guru Second Choice</th>
                 <th>Guru Second Company</th>
                 <th>Guru Second Designation</th>
+                <th>Guru Second Sector</th>
                 <th>Guru Third Choice</th>
                 <th>Guru Third Company</th>
                 <th>Guru Third Designation</th>
+                <th>Guru Third Sector</th>
               </tr>
             </thead>
             <tbody>
@@ -84,12 +87,15 @@ const AdminLogin = () => {
                   <td>{student.guruFirstChoice}</td>
                   <td>{student.guruFirstCompany}</td>
                   <td>{student.guruFirstDesignation}</td>
+                  <td>{student.guruFirstSector}</td>
                   <td>{student.guruSecondChoice}</td>
                   <td>{student.guruSecondCompany}</td>
                   <td>{student.guruSecondDesignation}</td>
+                  <td>{student.guruSecondSector}</td>
                   <td>{student.guruThirdChoice}</td>
                   <td>{student.guruThirdCompany}</td>
                   <td>{student.guruThirdDesignation}</td>
+                  <td>{student.guruThirdSector}</td>
                 </tr>
               ))}
             </tbody>

@@ -18,6 +18,7 @@ const StudentSchema = new mongoose.Schema({
   guruSecondSector: { type: String, required: true },
   guruThirdChoice: { type: String, required: true },
   guruThirdCompany: { type: String, required: true },
+  guruThirdDesignation: { type: String, required: true },
   guruThirdSector: { type: String, required: true }
 });
 
