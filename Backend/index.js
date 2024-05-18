@@ -11,6 +11,10 @@ app.use(cors());
 app.use('/api/users', userRoutes);
 app.use('/api/students', studentRoutes);
 
+app.get('/',(req,res)=>{
+  res.send('Welcome')
+})
+
 mongoose.connect('mongodb+srv://admin:admin@gps.asxgc4e.mongodb.net/?retryWrites=true&w=majority&appName=GPS', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
