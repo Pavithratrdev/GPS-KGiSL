@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const SignUp = () => {
   const nav = useNavigate()
-  const bc = axios.create({baseURL: 'http://localhost:5000'})
+  const bc = axios.create({baseURL: 'https://gps-k-gi-sl.vercel.app'})
   const [formData, setFormData] = useState({
     username: '',
     email: '',

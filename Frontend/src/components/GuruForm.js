@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const GuruForm = () => {
   const nav = useNavigate()
-  const bc =  axios.create({baseURL: 'http://localhost:5000'})
+  const bc =  axios.create({baseURL: 'https://gps-k-gi-sl.vercel.app'})
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
