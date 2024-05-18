@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.guru-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+}
+
+.guru-form {
+  background: rgba(240, 244, 248, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-section {
+  background: rgba(214, 219, 206, 0.9);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.form-section h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+  .form-row {
+    flex-direction: row;
+  }
+
+  .form-row .form-group {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .form-row .form-group:last-child {
+    margin-right: 0;
+  }
+}

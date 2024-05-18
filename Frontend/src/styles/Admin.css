@@ -1,0 +1,62 @@
+/* GuruForm.css */
+
+.guru-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .guru-form {
+    /* Your existing form styles */
+    background: rgba(240, 244, 248, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+
+
+  }
+  
+  .admin-login {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .admin-login input[type="email"],
+  .admin-login button {
+    margin-right: 10px;
+  }
+  
+  .admin-page {
+    margin-top: 20px;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .admin-page button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .admin-page button:hover {
+    background-color: #0056b3;
+  }
+
+  .table{
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  thead{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  
