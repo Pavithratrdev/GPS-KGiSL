@@ -279,6 +279,7 @@ const GuruForm = () => {
       })
     } catch (error) {
       console.log(error)
+      alert(error.response.data.message);
     }
     console.log('Form Data: ', formData);
   };
