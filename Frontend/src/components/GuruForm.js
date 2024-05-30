@@ -460,8 +460,8 @@ const GuruForm = () => {
             <input
               type="text"
               name="studentName"
-              value={formData.studentName}
-              onChange={handleChange}
+              value={formData.firstName + " " + formData.lastName}
+              disabled
               required
             />
           </div>
