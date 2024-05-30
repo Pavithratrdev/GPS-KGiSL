@@ -37,6 +37,13 @@ const GuruForm = () => {
     }
   }, []);
 
+  useEffect(() => {
+    setFormData((prevData) => ({
+      ...prevData,
+      studentName: `${prevData.firstName} ${prevData.lastName}`.trim()
+    }));
+  }, [formData.firstName, formData.lastName]);
+
   const departments = ['Computer Science', 'Electronics', 'Information Technology', 'Mechanical', 'Computer science and Business systems'];
   const years = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
   const domains = ['AI/ML', "Blockchain", "Cloud and Devops", "Cyber Security", "Full Stack", "Java"];
@@ -347,6 +354,7 @@ const GuruForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setFormData({...formData,studentName: formData.firstName + " " + formData.lastName})
       const { data } = await bc.post("/api/students", formData);
       console.log(data);
       alert(data);
@@ -460,7 +468,7 @@ const GuruForm = () => {
             <input
               type="text"
               name="studentName"
-              value={formData.firstName + " " + formData.lastName}
+              value={formData.studentName}
               disabled
               required
             />
