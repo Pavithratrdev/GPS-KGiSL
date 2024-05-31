@@ -118,7 +118,7 @@ const GuruForm = () => {
       "Designation": "Professor",
       "Company": "ECE",
       "Sector": "Edu",
-      "Domain": ["Embedded & Machine Learning"]
+      "Domain": ["Embedded Systems & Machine Learning"]
     },
     {
       "id": 10,
@@ -150,7 +150,7 @@ const GuruForm = () => {
       "Designation": "Director",
       "Company": "KGX",
       "Sector": "Edu",
-      "Domain": ["AI & ML", "Full Stack", "Embedded"]
+      "Domain": ["AI & ML", "Full Stack", "Embedded Systems"]
     },
     {
       "id": 14,
@@ -190,7 +190,7 @@ const GuruForm = () => {
       "Designation": "Director - Products & Solutions",
       "Company": "KG Invicta Services Pvt LTD",
       "Sector": "Industry",
-      "Domain": ["Full stack", "Database Management", "Analytics"]
+      "Domain": ["Full Stack", "Database Management", "Analytics"]
     },
     {
       "id": 19,
@@ -246,7 +246,7 @@ const GuruForm = () => {
       "Designation": "Founder",
       "Company": "Centillion Labs",
       "Sector": "Industry",
-      "Domain": ["Software Development", "Programming"]
+      "Domain": ["Software Development", "Programming Languages"]
     },
     {
       "id": 26,
