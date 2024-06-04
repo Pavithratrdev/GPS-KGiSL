@@ -34,7 +34,7 @@ const GuruForm = () => {
     }
   },[])
 
-  const departments = ['Computer Science', 'Electronics','Information Technology', 'Mechanical', 'Computer science and Business systems'];
+  const departments = ['Computer Science', 'Electronics & Communication','Information Technology', 'Mechanical', 'Computer science and Business systems', 'Artificial Intelligence and Data Science'];
   const years = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
   const gurus = [
     {
