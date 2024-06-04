@@ -48,15 +48,4 @@
   .admin-page button:hover {
     background-color: #0056b3;
   }
-
-  .table{
-    background-color: #fff;
-    padding: 10px;
-  }
-
-  thead{
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-  }
   

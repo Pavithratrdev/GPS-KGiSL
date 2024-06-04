@@ -81,9 +81,10 @@ button[type="submit"]:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  max-width: 800px;
   width: 100%;
   box-sizing: border-box;
+  overflow-x: auto; /* Ensure the container is scrollable horizontally */
 }
 
 .admin-page button {
@@ -99,6 +100,40 @@ button[type="submit"]:hover {
 
 .admin-page button:hover {
   background-color: #d32f2f;
+}
+
+.table-container {
+  overflow-x: auto; /* Horizontal scroll */
+  overflow-y: auto; /* Vertical scroll */
+  max-height: 400px; /* Adjust based on your requirements */
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.table-container th, .table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.table-container thead {
+  background-color: black;
+  color: white;
+}
+
+/* Force the background color on th within thead */
+.table-container thead th {
+  background-color: black;
+  color: white;
 }
 
 /* Media Queries for Smaller Screens */
