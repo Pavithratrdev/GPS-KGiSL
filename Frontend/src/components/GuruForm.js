@@ -37,7 +37,7 @@ const GuruForm = () => {
     }
   }, []);
 
-  const departments = ['Computer Science', 'Electronics','Information Technology', 'Mechanical', 'Computer science and Business systems','Artificial Intelligence and Data Science'];
+  const departments = ['Computer Science', 'Electronics','Information Technology', 'Mechanical', 'Computer science and Business systems','Artificial Intelligence and Data Science','MBA'];
   const years = ['1st Year', '2nd Year', '3rd Year', '4th Year'];
   const domains = ['AI/ML', "Blockchain", "Cloud and Devops", "Cyber Security", "Full Stack", "Java"];
   const gurus = [
